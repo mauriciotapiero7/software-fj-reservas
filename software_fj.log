@@ -1,0 +1,35 @@
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | ======================================================================
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | INICIO DE EJECUCIÓN: Sistema Integral Software FJ (Sin Base de Datos)
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | ======================================================================
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | [CLIENTE REGISTRADO] Cliente[ID=CLI-001, Nombre='Gustavo Mauricio Guzmán', Email='gustavo.guzman@softwarefj.com', Tel='3001234567']
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | [FINALLY AUDITORÍA] Intento de registro de cliente 'CLI-001' finalizado -> EXITOSO.
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | [CLIENTE REGISTRADO] Cliente[ID=CLI-002, Nombre='Laura Sofía Martínez', Email='laura.martinez@empresa.co', Tel='3109876543']
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | [FINALLY AUDITORÍA] Intento de registro de cliente 'CLI-002' finalizado -> EXITOSO.
+2026-11-22 06:34:18 | ERROR    | SoftwareFJ | [ERROR CLIENTE] Código 400: Correo electrónico inválido ('carlosperez_invalido.com'). Formato esperado: usuario@dominio.com
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | [FINALLY AUDITORÍA] Intento de registro de cliente 'CLI-003' finalizado -> FALLIDO.
+2026-11-22 06:34:18 | ERROR    | SoftwareFJ | [ERROR CLIENTE] Código 400: Teléfono inválido ('300ABC999'). Debe contener únicamente entre 7 y 15 dígitos.
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | [FINALLY AUDITORÍA] Intento de registro de cliente 'CLI-004' finalizado -> FALLIDO.
+2026-11-22 06:34:18 | ERROR    | SoftwareFJ | [ERROR CLIENTE] Código 400: El ID de cliente 'CLI-001' ya se encuentra registrado.
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | [FINALLY AUDITORÍA] Intento de registro de cliente 'CLI-001' finalizado -> FALLIDO.
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | [SERVICIO REGISTRADO] ServicioSala[ID=SRV-SALA-01, Sala='Sala Ejecutiva Norte', Capacidad=15 pers, Videobeam=Sí, Tarifa/h=$80,000.00]
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | [SERVICIO REGISTRADO] ServicioEquipo[ID=SRV-EQU-01, Equipo='Workstations Desarrollo', Cantidad=4, Gama=Alta, Tarifa/h=$45,000.00]
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | [SERVICIO REGISTRADO] ServicioAsesoria[ID=SRV-ASE-01, Especialidad='Arquitectura Cloud', Nivel=Senior, Tarifa/h=$150,000.00]
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | [SERVICIO REGISTRADO] ServicioSala[ID=SRV-SALA-02, Sala='Auditorio Principal', Capacidad=80 pers, Videobeam=Sí, Tarifa/h=$200,000.00]
+2026-11-22 06:34:18 | ERROR    | SoftwareFJ | [ERROR SERVICIO] Código 422: La tarifa base por hora (-50000.0) debe ser un valor positivo mayor a cero.
+2026-11-22 06:34:18 | ERROR    | SoftwareFJ | [ERROR SERVICIO] Código 400: Gama 'UltraMega' inválida. Opciones permitidas: Media, Alta o Workstation.
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | Reserva 'RES-101' CONFIRMADA para 'Gustavo Mauricio Guzmán'. Total: $394,128.00
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | Reserva 'RES-101' PROCESADA satisfactoriamente.
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | [FINALLY RESERVA] Transacción de reserva 'RES-101' finalizada.
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | Reserva 'RES-102' CONFIRMADA para 'Laura Sofía Martínez'. Total: $1,780,537.50
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | Reserva 'RES-102' PROCESADA satisfactoriamente.
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | [FINALLY RESERVA] Transacción de reserva 'RES-102' finalizada.
+2026-11-22 06:34:18 | ERROR    | SoftwareFJ | [ERROR RESERVA 'RES-103'] Código 409: El servicio 'SRV-SALA-02' no se encuentra disponible para reservas.
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | [FINALLY RESERVA] Transacción de reserva 'RES-103' finalizada.
+2026-11-22 06:34:18 | ERROR    | SoftwareFJ | [ERROR RESERVA 'RES-104'] Código 500: Fallo al confirmar la reserva 'RES-104' debido a una inconsistencia financiera. | Causa encadenada: Porcentaje de descuento inconsistente: 150.0%.
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | [FINALLY RESERVA] Transacción de reserva 'RES-104' finalizada.
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | Reserva 'RES-105' CONFIRMADA para 'Laura Sofía Martínez'. Total: $535,500.00
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | Reserva 'RES-105' PROCESADA satisfactoriamente.
+2026-11-22 06:34:18 | ERROR    | SoftwareFJ | [ERROR RESERVA 'RES-105'] Código 500: Operación denegada: no se puede cancelar la reserva 'RES-105' porque ya está PROCESADA.
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | [FINALLY RESERVA] Transacción de reserva 'RES-105' finalizada.
+2026-11-22 06:34:18 | ERROR    | SoftwareFJ | [ERROR RESERVA 'RES-106'] Código 400: No existe ningún cliente registrado con el ID 'CLI-999'.
+2026-11-22 06:34:18 | INFO     | SoftwareFJ | [FINALLY RESERVA] Transacción de reserva 'RES-106' finalizada.
